@@ -8,11 +8,13 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-a {
+nav a {
   color: black;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+  transition: all 0.35s linear;
+  /* Navigation: Wenn man über die Maus fährt, bleibt 1s lang die Farbe bestehen */
 }
 
 ul {
@@ -39,4 +41,88 @@ ul {
 #burger {
   background: transparent;
   border: none;
+}
+
+#hero {
+  background-image: url(img/intro.jpg);
+  height: 100vh;
+  /* 100 viewport */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#hero p {
+  color: #fff;
+}
+
+#hero h1 {
+  color: #fff;
+  font-size: 2rem;
+}
+/* Nur p  und h1 der Hero-Sektion sollen weiß sein.  */
+
+.button {
+  color: #37467;
+  background: #fff;
+  border: 2px #37467 solid;
+  padding: 1rem;
+  text-transform: uppercase;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: ALL 1s ease;
+  font-weight: bold;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.button:hover {
+  background: #374a67;
+  color: #fff;
+
+}
+
+}
+}
+p {
+  color: white;
+}
+
+absatz
+Überschrift
+
+@media (min-width: 960px)
+{
+  #main-navigation {
+    display: flex;
+  }
+
+  #burger {
+    display: none;
+  }
+
+  #ul {
+    display: flex;
+  }
+  nav li{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  nav li:last-child {
+    margin-right: 0;
+  }
+
+  nav li:first-child{
+    background: red;
+  }
+
+nav a:hover {
+  color: #596e7a;
+  background: yellow;
+}
+/* Mouse-over: Farbe ändert sich */
 }
