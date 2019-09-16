@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: rgb(255, 17, 0);
+  background-color: transparent;
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -64,8 +64,8 @@ ul {
   color: #fff;
   font-size: 2rem;
 }
-/* Nur p  und h1 der Hero-Sektion sollen weiß sein.  */
 
+/* Nur p  und h1 der Hero-Sektion sollen weiß sein.  */
 .button {
   color: #37467;
   background: #fff;
@@ -83,20 +83,27 @@ ul {
 .button:hover {
   background: #374a67;
   color: #fff;
-
 }
 
+.card {
+  text-align: center;
+  border: 1px solid #828282;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 1);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 1rem;
 }
+
+.card img {
+  width: 100%;
 }
+
 p {
   color: white;
 }
 
-absatz
-Überschrift
-
-@media (min-width: 960px)
-{
+/* absatz Überschrift */
+@media (min-width: 960px) {
   #main-navigation {
     display: flex;
   }
@@ -108,21 +115,51 @@ absatz
   #ul {
     display: flex;
   }
-  nav li{
+
+  nav li {
     margin-left: 1rem;
     margin-right: 1rem;
   }
+
   nav li:last-child {
     margin-right: 0;
   }
 
-  nav li:first-child{
+  nav li:first-child {
     background: red;
   }
 
-nav a:hover {
-  color: #596e7a;
-  background: yellow;
+  nav a:hover {
+    color: #596e7a;
+    background: yellow;
+  }
+
+  /* Mouse-over: Farbe ändert sich */
+  .row {
+    display: flex;
+    margin: 1rem;
+  }
 }
-/* Mouse-over: Farbe ändert sich */
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Alle Links in der Karte */
+.card p a {
+  color: #828282
+}
+
+/* -.card p a -> Alle Ps, die in einem a sind */
+.card .button {
+  background: #374a67;
+  color: #fff;
+}
+
+/* .card .button -> Ein Button der in den Karten ist */
+.card .button:hover {
+  background: #fff;
+  color: #374a67;
+  border-color: #374a67;
 }
