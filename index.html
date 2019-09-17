@@ -10,6 +10,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Das Stylesheet verknüpfen mit dem Link Element -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link href="https://fonts.googleapis.com/css?family=Lexend+Exa&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -46,7 +48,7 @@
     </nav>
   </header>
 
-  <main id="hauptteil">
+  <main id="hauptteil" id="layer">
     <section id="hero">
       <div class="hero-box">
         <h1>Die besten Rezepte für Webworker</h1>
@@ -134,6 +136,49 @@
       </div>
     </section>
   </main>
+
+  <aside class="sidebar">
+    <h2>
+      Kein Rezept mehr verpassen
+      <br>
+      Hol dir unseren Newsletter
+    </h2>
+
+    <form class="newsletter" action="" method="get">
+      <input type="email" name="emailadresse" value="" placeholder="Deine Emailadresse" required class="email">
+      <button type="submit" name="button" class="button">Abonnieren</button>
+  </aside>
+
+  <footer>
+    <nav id="footer-nav">
+      <ul>
+        <li>
+          <a href="#">Impressum</a>
+        </li>
+        <li>
+          <a href="#">Datenschutz</a>
+        </li>
+        <li>
+          <a href="#">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav id="social-nav">
+      <ul>
+        <li class="icon-facebook">
+          <a href="#"></a>
+        </li>
+        <li class="icon-instagram">
+          <a href="#"></a>
+        </li>
+        <li class="icon-youtube">
+          <a href="#"></a>
+        </li>
+      </ul>
+    </nav>
+
+  </footer>
   <script src="js/menu.js">
 
   </script>

@@ -5,7 +5,7 @@
 body {
   background-color: transparent;
   margin: 0;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Lexend Exa', sans-serif;
 }
 
 nav a {
@@ -32,6 +32,7 @@ ul {
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
+  position: fixed;
 }
 
 #main-navigation {
@@ -78,6 +79,7 @@ ul {
   font-weight: bold;
   margin-top: 1rem;
   display: inline-block;
+  margin: 1rem;
 }
 
 .button:hover {
@@ -102,7 +104,99 @@ p {
   color: white;
 }
 
+.sidebar {
+  background: #04122B;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  line-height: 2.5rem;
+  font-size: 1rem;
+}
+
 /* absatz Überschrift */
+#social-nav ul {
+  display: flex;
+  font-size: 2rem;
+}
+
+footer {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Alle Links in der Karte */
+.card p a {
+  color: #828282;
+}
+
+.card p {
+  margin: 1rem;
+}
+
+/* -.card p a -> Alle Ps, die in einem a sind */
+.card .button {
+  background: #374a67;
+  color: #fff;
+  display: block;
+}
+
+/* .card .button -> Ein Button der in den Karten ist */
+.card .button:hover {
+  background: #fff;
+  color: #374a67;
+  border-color: #374a67;
+}
+
+#rezepte {
+  text-align: center;
+}
+
+.email {
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid #04122b;
+}
+
+.newsletter .button {
+  margin-left: 4px;
+}
+
+#footer-nav {
+  text-align: center;
+  line-height: 1.5rem;
+
+}
+
+#social-nav ul li {
+  padding: 2rem;
+}
+
+#main-navigation.show {
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background: white;
+  width: 100%;
+  text-align: center;
+  height: calc(100vh - 60px);
+  padding: 3rem 0;
+  line-height: 3rem;
+
+}
+
+.overflow {
+  overflow: hidden;}
+
+
 @media (min-width: 960px) {
   #main-navigation {
     display: flex;
@@ -112,10 +206,8 @@ p {
     display: none;
   }
 
-  #ul {
-    display: flex;
-  }
-
+  /* #ul {
+    display: flex; */
   nav li {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -126,7 +218,7 @@ p {
   }
 
   nav li:first-child {
-    background: red;
+    background: white;
   }
 
   nav a:hover {
@@ -139,27 +231,15 @@ p {
     display: flex;
     margin: 1rem;
   }
-}
 
-.card a {
-  text-decoration: none;
-  color: black;
-}
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
 
-/* Alle Links in der Karte */
-.card p a {
-  color: #828282
-}
-
-/* -.card p a -> Alle Ps, die in einem a sind */
-.card .button {
-  background: #374a67;
-  color: #fff;
-}
-
-/* .card .button -> Ein Button der in den Karten ist */
-.card .button:hover {
-  background: #fff;
-  color: #374a67;
-  border-color: #374a67;
+  #footer-nav ul {
+    display: flex;
+  }
 }
